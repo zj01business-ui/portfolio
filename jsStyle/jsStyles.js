@@ -58,7 +58,7 @@ document.getElementById("popup-container").addEventListener("click", function (e
 });
 
 function goToHomePage() {
-    window.location.href = 'HOME.html';
+    window.location.href = 'index.html';
 }
 
 // video
