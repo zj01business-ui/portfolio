@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASE_PAGE</title>
+    <link rel="stylesheet" href="css/CommonStyles.css" type="text/css">
+    <link rel="stylesheet" href="css/stylesheetCASE.css" type="text/css">
+    <script src="jsStyle/jsStyles.js"></script>
+</head>
+<body>
+    <main>
+        <nav class="MAIN-MENU">
+            <ul>
+                <li class="home-menu"  ><a href="HOME.html" title="HOME_PAGE" target="_blank">HOME</a></li>
+                <li class="about-menu"><a href="ABOUT.html" title="ABOUT_PAGE" target="_blank">ABOUT</a></li>
+            </ul>
+            <div id="NAV-LOGO" onclick="goToHomePage()">
+            </div>
+            <ul>
+                <li class="case-menu"><a href="CASE.html" title="CASE_PAGE" target="_blank">CASE</a></li>
+                <li class="contact-menu" ><a href="CONTACT.html" title="CONTACT_PAGE" target="_blank">CONTACT</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="breadcrumb">
+                HOME&gt;CASE
+              </div>
+            <aside>
+                <p>
+                    <span class="h1-banner">PORTFOLIO</span> 
+                    <br>
+                    <span class="h2-banner">
+                        PROJECT CASES
+                    </span>
+                </p>
+                <p id="BANNER-DESCRIPTION">Leaving a mark through my technical <br> prowess and creative flair.</p>
+            </aside>
+            <div>
+                <button onclick="location.href='contact.html'" class="BANNER3-BUTTON">Get in touch</button>
+            </div>
+        </header>
+        <section class="banner-form">
+            <h2 id="form-title">FIND A CASE</h2>
+            <div id="banner-form-container">
+                <form action="#CASE2" class="custom-form">
+                    <div class="search-input-container">
+                        <!-- Left Icon -->
+                        <img src="Assets/SEARCH_ICON.png" title="search-Icon" alt="search-Icon" class="search-icon">
+                        <!-- Input Field -->
+                        <input type="search" placeholder="Enter keywords"  class="search-input" required>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="Search-button">Search</button>
+                </form>
+            </div>
+            <div class="three-icons-container-form">
+                <div class="three-icons-container-form-items">
+                    <img src="Assets/LIGHT_BULB_ICON.png" title="LIGHT_BULB_ICON" alt="LIGHT_BULB_ICON">Adhere to original design 
+                </div>
+                <div class="three-icons-container-form-items">
+                    <img src="Assets/QUICK_DRAWING_ICON.png" title="QUICK-DRAWING-ICON" alt="QUICK-DRAWING-ICON">Quick drawing
+                </div>
+                <div class="three-icons-container-form-items">
+                    <img src="Assets/UNTIL_SATISFIED_ICON.png" title="UNTIL-SATISFIED-ICON" alt="UNTIL-SATISFIED-ICON">Until satisfied
+                </div>
+            </div>
+        </section>
+        
+        <section class="PROJECT-CASE-SECTION">
+            <h2>MY PROJECT CASE</h2>
+            <aside id="CASE-TEXTURE"><img src="Assets/PROJECT_PAGE_TEXTURE.png" title="TEXTURE" alt="TEXTURE"></aside>
+            <div id="PROJECT-CASE-CONTAINER">
+                <div id="CASE1">
+                    <img src="Assets/PROJECT_PAGE_CASE(01).png" alt="SPACE_POSTER_DESIGN" title="SPACE_POSTER_DESIGN">
+                    SPACE DESIGN POSTER PROJECT
+                    <div class="popup-words">
+                        Under 
+                        <br>
+                        maintainence
+                    </div>
+                </div>
+                <div id="popup-container" onclick="closePopup()">
+                    <img id="popup-image" src="path/to/placeholder-image.jpg" alt="Hidden Feature" title="Hidden Feature">
+                    <span id="close-popup">X</span>
+                    <button id="next-image-button" onclick="loadNextImage(event)">Next</button>
+                </div>
+
+                <div id="CASE2" onclick="openPopup('Assets/HIDDEN_FEATURE_PAGE(HOME).png')">
+                    <img src="Assets/PROJECT_PAGE_CASE(02).png" alt="WEB_DESIGN" title="WEB_DESIGN">
+                    TO MY LOVE COSMETIC WEB PROJECT
+                    <div class="popup-words">
+                        Click to see
+                    </div>
+                </div>
+                
+                <div id="CASE3">
+                    <img src="Assets/PROJECT_PAGE_CASE(03).png" alt="CHRISTMAS_POSTER_DESIGN" title="CHRISTMAS_POSTER_DESIGN">
+                    CHRISTMAS POSTER PROJECT
+                    <div class="popup-words">
+                        Under 
+                        <br>
+                        maintainence
+                    </div>
+                </div>
+                <div id="CASE4">
+                    <img src="Assets/PROJECT_PAGE_CASE(04).png" alt="CHRISTMAS_EVE_POSTER_DESIGN" title="CHRISTMAS_EVE_POSTER_DESIGN">
+                    CHRISTMAS EVE POSTER PROJECT
+                    <div class="popup-words">
+                        Under 
+                        <br>
+                        maintainence
+                    </div>
+                </div>
+                <div id="CASE5" class="video-container" onclick="playVideo()">
+                    <img src="Assets/PROJECT_PAGE_CASE(05).png" alt="MUSIC_VISUALISATION" title="MUSIC_VISUALISATION">
+                    <video id="myVideo">
+                        <source src="Assets/Recording_2023-12-24_112119.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    MUSIC VISUALIZATION
+                    <div class="popup-words">
+                        Click to play
+                    </div>
+                </div>
+                
+                <div id="CASE6">
+                    <img src="Assets/PROJECT_PAGE_CASE(06).png" alt="BENJAMIN_POSTER_DESIGN" title="BENJAMIN_POSTER_DESIGN">
+                    BENJAMIN POSTER DESIGN
+                    <div class="popup-words">
+                        Under 
+                        <br>
+                        maintainence
+                    </div>
+                </div>
+                <div id="CASE7">
+                    <img src="Assets/PROJECT_PAGE_CASE(07).png" alt="SNAKE GAME DESIGN" title="SNAKE GAME DESIGN">
+                    SNAKE GAME DESIGN
+                    <div class="popup-words">
+                        Under 
+                        <br>
+                        maintainence
+                    </div>
+                </div>
+                <div id="CASE8">
+                    <img src="Assets/PROJECT_PAGE_CASE(08).png" alt="BUSINESS CARD DESIGN" title="BUSINESS CARD DESIGN">
+                    BUSINESS CARD DESIGN
+                    <div class="popup-words">
+                        Under 
+                        <br>
+                        maintainence
+                    </div>
+                </div>
+                <div id="CASE9">
+                    <img src="Assets/PROJECT_PAGE_CASE(09).png" alt="LOGO DESIGN" title="LOGO DESIGN">
+                    LOGO DESIGN
+                    <div class="popup-words">
+                        Under 
+                        <br>
+                        maintainence
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div>
+                <ul id="FOOTER-TOP">
+                    <li id="LETS-CONNECT">LETS CONNECT THERE</li>
+                    <li id="HIRE-ME"><a href="form1.html" target="_blank" title="HIRE-ME">Hire Me</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-container">
+                <div class="social-media-container">
+                    <ul>
+                        <li class="BRAND-LOGO"><img src="Assets/LOGO_WHITE.png" class="LOGO" alt="LOGO" title="LOGO"></li>
+                    </ul>
+                    <ul>
+                        <li id="FOLLOW-ME">FOLLOW ME ON SOCIAL MEDIA:</li>
+                    </ul>
+                    <div class="social-media-icons"> 
+                        <div>
+                            <a href="https://www.facebook.com/nanyangpoly/" target="_blank"><img src="Assets/FACEBOOK_ICON.png" class="ICON" alt="FACEBOOK" title="FACEBOOK"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/nanyangpoly/" target="_blank"><img src="Assets/IG_ICON.png" class="ICON" alt="IG" title="IG"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.youtube.com/user/weareNYP" target="_blank"><img src="Assets/YOUTUBE_ICON.png" class="ICON" alt="YOUTUBE" title="YOUTUBE"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.tiktok.com/@nanyangpoly" target="_blank"><img src="Assets/TIKTOK_ICON.png" class="ICON" alt="TIKTOK" title="TIKTOK"></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="nav-links-container">
+                    <ul>
+                        <li><a href="HOME.html" target="_blank" title="HOME_PAGE">HOME</a></li>
+                        <li><a href="ABOUT.html" target="_blank" title="ABOUT_PAGE">ABOUT</a></li>
+                        <li><a href="CASE.html" target="_blank" title="CASE_PAGE">CASE</a></li>
+                        <li><a href="CONTACT.html" target="_blank" title="CONTACT_PAGE">CONTACT</a></li>
+                    </ul>
+                </div>
+        
+                <div class="form-container">
+                    <span id="HAVE-AN-AWESOME-PROJECT-IDEA">
+                        HAVE AN AWESOME PROJECT IDEA?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LET'S DISCUSS
+                    </span>
+                    <!-- Your existing HTML content -->
+                    <form action="mailto:230107R@mymail.nyp.edu.sg" class="custom-form">
+                        <div class="email-input-container">
+                            <!-- Left Icon -->
+                            <img src="Assets/EMAIL_ICON.png" title="EMAIL-Icon" alt="EMAIL-Icon" class="EMAIL-icon">
+                            <!-- Input Field -->
+                            <input value="" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" name="user-email" title="Enter a valid email address" type="email" placeholder="Enter E-mail" class="email-input" required>
+                        </div>
+                        <!-- Submit Button -->
+                        <button  type="submit" class="submit-button">Send</button>
+                    </form>
+                    <div id="three-icons-container">
+                        <div>
+                            <img src="Assets/LIGHT_BULB_ICON.png" alt="BULB-ICON" title="BULB-ICON">Adhere to original design 
+                        </div>
+                        <div>
+                            <img src="Assets/QUICK_DRAWING_ICON.png" alt="QUICK-DRAWING-ICON" title="QUICK-DRAWING-ICON">Quick drawing
+                        </div>
+                        <div>
+                            <img src="Assets/UNTIL_SATISFIED_ICON.png" alt="UNTIL-SATISFIED-ICON" title="UNTIL-SATISFIED-ICON">Until satisfied
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div>
+                <ul id="FOOTER-BOTTOM">
+                    <li id="POWERED-BY">C 2023  KOH ZI JIE  Powered by</li>
+                    <li id="SITEMAP" >Sitemap</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

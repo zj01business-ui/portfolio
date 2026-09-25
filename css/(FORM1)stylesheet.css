@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+form div {
+    margin-bottom: 1em;
+}
+#contactPreferenceContainer, #portfolioSuggestionsContainer {
+    display: none;
+}
+/* Style the form container */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels */
+label {
+    display: inline-block;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Style form inputs and textareas */
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10em;
+}
+
+/* Style submit button */
+button {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* Style radio buttons and checkboxes */
+input[type="radio"], input[type="checkbox"] {
+    vertical-align: bottom;
+}
+
+/* Apply additional styling to the suggestions textarea */
+#portfolioSuggestionsContainer textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/* Style the form on small screens */
+@media (max-width: 600px) {
+    form {
+        margin: 10px;
+    }
+}
+
+.style-flex{
+    display: flex;
+}

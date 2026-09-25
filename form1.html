@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let me know more about you</title>
+    <link rel="stylesheet" href="css/(FORM1)stylesheet.css" type="text/css">
+    <script src="jsStyle/jsStyles.js"></script>
+</head>
+<body>
+    <main>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi"  method="post" id="feedbackForm">
+            <div>
+                <label for="relationship">Your Relationship:</label>
+                <select id="relationship" name="relationship" required onchange="toggleAdditionalFields()">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="friends">Members of the public</option>
+                    <option value="friends">Friends</option>
+                    <option value="lecturer">Lecturer</option>  
+                    <option value="employer">Employer</option>
+                </select>
+            </div>
+            <div>
+                <label for="Company">What Company are you from?:</label>
+                <input type="text" id="Company" name="Company" pattern="^[A-Za-z\s.,'-]{1,50}$" title="OPTIONAL">
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" pattern="^[A-Za-z\s]{5,50}$" title="Must be between 5-50 characters, allowing letters and spaces" required>
+            </div>
+    
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" title="8 digits, no alphabets" required>
+            </div>
+    
+            <div>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="1"></textarea>
+            </div>
+
+            <div id="dobField">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div id="interestColorField">
+                <label for="interestColor">Interest Colour:</label>
+                <input type="color" id="interestColor" name="interestColor">
+            </div>
+    
+            <div id="raceField">
+                <label for="race">Race:</label>
+                <select id="race" name="race" >
+                    <option value="" disabled selected>Select one</option>
+                    <option value="asian">Asian</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+    
+            <div class="style-flex">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+            </div>
+            
+            <div>
+                <label>Are you looking to hire me?</label>
+                <div class="style-flex">
+                    <label for="hireYes">Yes</label>
+                    <input type="radio" id="hireYes" name="hiringInterest" value="yes" required>
+                    <label for="hireNo">No</label>
+                    <input type="radio" id="hireNo" name="hiringInterest" value="no" required>
+                </div>
+            </div>
+           
+            <div>
+                <label>Do you want me to contact you back?</label>
+                <div class="style-flex">
+                    <label for="contactBackYes">Yes</label>
+                    <input type="radio" id="contactBackYes" name="contactBack" value="yes" required onclick="toggleContactPreference()">
+                    <label for="contactBackNo">No</label>
+                    <input type="radio" id="contactBackNo" name="contactBack" value="no" required onclick="toggleContactPreference()">
+                </div>
+                
+            </div>
+    
+            <div id="contactPreferenceContainer">
+                <label for="contactPreference">Preferred method of contact:</label>
+                <div class="style-flex">
+                    <select id="contactPreference" name="contactPreference" required>
+                        <option value="" disabled selected>Select preferred method of contact</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div>
+                <label>How do you feel about my portfolio?</label>
+                <div class="style-flex">
+                    <label for="positive">Positive</label>
+                    <input type="radio" id="positive" name="feelings" value="positive" required>
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" id="neutral" name="feelings" value="neutral" required>
+                    <label for="negative">Negative</label>
+                    <input type="radio" id="negative" name="feelings" value="negative" required>
+                </div>
+            </div>
+            <div>
+                <label>Do you have any suggestions for my portfolio?</label>
+                <div class="style-flex">
+                    <label for="portfolioSuggestionsYes">Yes</label>
+                    <input type="radio" id="portfolioSuggestionsYes" name="portfolioSuggestionsOption" value="yes" required onclick="showTextarea()">
+                    <label for="portfolioSuggestionsNo">No</label>
+                    <input type="radio" id="portfolioSuggestionsNo" name="portfolioSuggestionsOption" value="no" required onclick="hideTextarea()">
+                </div>
+            </div>
+            <div id="portfolioSuggestionsContainer">
+                <label for="portfolioSuggestions">Suggestions:</label>
+                <textarea id="portfolioSuggestions" name="portfolioSuggestions" rows="5"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

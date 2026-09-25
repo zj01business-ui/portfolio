@@ -1,0 +1,237 @@
+/* LI-home */
+li.about-menu {
+    background-color: white;
+    border-radius: 2em;
+}
+
+li.about-menu a {
+    color: black;
+}
+
+/* BANNER*/
+
+header{
+    background-image: url(../Assets/ABOUT_PAGE_BANNER.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 861px;
+    color: white;
+}
+header p{
+text-align: left;
+font-family: arial; font-size: 30px;
+color: white;
+}
+header aside{
+position: relative;
+padding-top: 15em;
+padding-left: 7.5em;
+}
+.BANNER-DESCRIPTION{
+    font-size: 30px;
+    font-weight: bold;
+}
+.h1-banner{
+font-family: 字体圈欣意LOGO体; font-size: 120px; font-weight: bold; opacity: 32%;
+}
+.h2-banner{
+text-align: right; font-family: 字体圈欣意LOGO体; font-size: 50px; font-weight: bold;
+position: relative;
+bottom: 0.8em;
+}
+.BANNER2-BUTTON{
+    width: 220px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 10em;
+    padding: 1em 0em;
+    margin-top: 6em;
+    margin-left: -0.5em;
+    cursor: pointer;
+    border: none;
+}
+
+.BANNER2-BUTTON:hover{
+    background-color: black;
+    color: white;
+    border: white solid 1px;
+}
+.breadcrumb{
+    position: relative;
+    top: 88%;
+    left: 85%;
+    font-size: 18px;
+    }
+
+/* HAVENT DONE */
+#ABOUT-ME-SECTION{
+    display: flex;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+} 
+#ABOUT-ME-SECTION div{
+    flex: 1;
+}
+#ABOUT-ME-SECTION img{
+    width: 100%;
+    height: auto;
+}
+#ABOUT-ME{
+    margin-left: 3em;
+    margin-top: 1.5em;
+}
+#LONG-PARAGRAPH{
+  line-height: 1.5em;
+  width: 98%;
+  color: #666666;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 1.3em;
+  font-size: 16px;
+}
+
+/* TABLE */
+.merged-table {
+    margin: 15px; /* Adjust margin as needed */
+    display: flex;
+    font-size: 18px;
+}
+.merged-table td {
+    text-align: left;
+    padding-bottom: 2em;
+}
+
+.rectangle-set {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.rectangle {
+    height: 20px; /* Adjust the height as needed */
+}
+
+.rectangle-top1 {
+    width: 90px; /* Width of the top rectangle */
+    background-color: gray; /* Change to your desired color */
+}
+.rectangle-bottom1 {
+    width: 340px; /* Width of the bottom rectangle */
+    background-color: black; /* Change to your desired color */
+}
+.rectangle-top2 {
+    width: 80px; /* Width of the top rectangle */
+    background-color: gray; /* Change to your desired color */
+}
+.rectangle-bottom2 {
+    width: 350px; /* Width of the bottom rectangle */
+    background-color: black; /* Change to your desired color */
+}
+.rectangle-top3 {
+    width: 110px; /* Width of the top rectangle */
+    background-color: gray; /* Change to your desired color */
+}
+.rectangle-bottom3 {
+    width: 320px; /* Width of the bottom rectangle */
+    background-color: black; /* Change to your desired color */
+}
+.rectangle-top4 {
+    width: 110px; /* Width of the top rectangle */
+    background-color: gray; /* Change to your desired color */
+}
+.rectangle-bottom4 {
+    width: 320px; /* Width of the bottom rectangle */
+    background-color: black; /* Change to your desired color */
+}
+.rectangle-top5 {
+    width: 150px; /* Width of the top rectangle */
+    background-color: gray; /* Change to your desired color */
+}
+.rectangle-bottom5 {
+    width: 280px; /* Width of the bottom rectangle */
+    background-color: black; /* Change to your desired color */
+}
+.rectangle-top6 {
+    width: 150px; /* Width of the top rectangle */
+    background-color: gray; /* Change to your desired color */
+}
+.rectangle-bottom6 {
+    width: 280px; /* Width of the bottom rectangle */
+    background-color: black; /* Change to your desired color */
+}
+
+.title {
+    color: #000; /* Change to your desired color */
+    font-size: 16px;
+}
+
+
+h2{
+font-size: 30px;
+font-weight: 900;
+}
+#ABOUT-ME h2{
+margin-bottom: 1.5em;
+}
+#Paragraph-below-Long-paragraph{
+display: flex;
+flex: 1;
+width: 97%;
+}  
+#Paragraph-below-Long-paragraph img{
+width: 20px;
+height: 20px;
+}
+.ABOUT-ME-BOTTOM-description p{
+margin: 1.5em 0 ;
+}
+.ABOUT-ME-BOTTOM-description-main-title{
+font-size: 18px;
+color: #333333;
+font-weight: 900;
+}
+.ABOUT-ME-BOTTOM-description-main-title img{
+padding-right: 1px;
+}
+.ABOUT-ME-BOTTOM-description-title{
+font-size: 16px;
+color: #333333;
+line-height: 1.8em;
+}
+.ABOUT-ME-BOTTOM-description-title span{
+font-weight: 700;
+}
+
+/* MY-SERVICE SECTION */
+.my-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3em;
+    }
+    
+    #grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 16px; /* Adjust the gap as needed */
+    margin-top: 5em;
+    }
+    #grid-container img{
+        margin-bottom: 1.5em;
+    }
+
+    .grid-item1,.grid-item3{
+    margin-top: 5em;
+    }
+    .grid-item2,.grid-item4{
+    margin-bottom: 5em;
+    }
+    .grid-container-words{
+        font-size: 18px;
+        color: #666666;
+    }

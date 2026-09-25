@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT_PAGE</title>
+    <link rel="stylesheet" href="css/CommonStyles.css" type="text/css">
+    <link rel="stylesheet" href="css/stylesheetCONTACT.css" type="text/css">
+    <script src="jsStyle/jsStyles.js"></script>
+</head>
+<body>
+        <main>
+            <nav class="MAIN-MENU">
+                <ul>
+                    <li class="home-menu"  ><a href="HOME.html" title="HOME_PAGE" target="_blank">HOME</a></li>
+                    <li class="about-menu"><a href="ABOUT.html" title="ABOUT_PAGE" target="_blank">ABOUT</a></li>
+                </ul>
+                <div id="NAV-LOGO" onclick="goToHomePage()">
+                </div>
+                <ul>
+                    <li class="case-menu"><a href="CASE.html" title="CASE_PAGE" target="_blank">CASE</a></li>
+                    <li class="contact-menu" ><a href="CONTACT.html" title="CONTACT_PAGE" target="_blank">CONTACT</a></li>
+                </ul>
+            </nav>
+            <header>
+                <div class="breadcrumb">
+                    HOME&gt;CONTACT
+                  </div>
+                <aside>
+                    <p>
+                        <span class="h1-banner">CONTACT</span> 
+                        <br>
+                        <span class="h2-banner">
+                            VALUES
+                        </span>
+                    </p>
+                    <p class="BANNER-DESCRIPTION">
+                        Integrity, innovation, and <br> a commitment to  <br> delivering results define <br>my professional ethos.
+                    </p>
+                </aside>
+                <div>
+                    <button onclick="location.href='#contact-texture-left-container'" class="BANNER4-BUTTON">Get in touch</button>
+                </div>
+            </header>
+            <section id="contact-texture-section">
+                <div id="contact-texture-left-container">
+                    <div id="contact-texture-content-left">
+                        <h2>GET IN TOUCH</h2>
+                        <p id="contact-texture-content-left-p1">
+                            Have a question or a project in mind?  id love to hear from you Let's
+                            <br>
+                            chat and make something amazing together.
+                        </p>
+                        <p class="contact-texture-icons">
+                            <img src="Assets/PHONE_ICON.png" title="PHONE_ICON" alt="PHONE_ICON">
+                            +65 89174964
+                        </p>
+                        <p class="contact-texture-icons">
+                            <img src="Assets/CONTACT_MAIL_ICON.png" title="MAIL-ICON" alt="MAIL-ICON">
+                            zj01business@gmail.com
+                        </p>
+                        <p class="contact-texture-icons">
+                            <img src="Assets/LOCATION_ICON.png" title="LOCATION_ICON" alt="LOCATION_ICON">
+                            SINGAPORE
+                        </p>
+                    </div>
+                </div>
+                <div id="contact-texture-right-container">
+                            <div id="contact-texture-content-right">
+                                <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                                    <!-- Row 1: Want to consult the service (Dropdown) -->
+                                    <select id="service" name="service" required>
+                                        <option value="" disabled selected hidden>Want to consult the service:</option>
+                                        <option value="option2">Web production</option>
+                                        <option value="option3">Poster design</option>
+                                        <option value="option4">Product finishing</option>
+                                        <option value="option5">Icon design</option>
+                                        <option value="option6">Other</option>
+                                    </select>
+                
+                                    <!-- Row 2: Name (Text Input) -->
+                                    <input type="text" id="name" name="name" title="Must be between 5-50 characters and no numbers allowed" pattern="^[A-Za-z]{5,50}$" placeholder="*Name:" required>
+                
+                                    <!-- Row 3: Contact (Text Input) -->
+                                    <input type="tel" id="contact" placeholder="Phone Number:" pattern="[0-9]{8}" title="8 digits, no alphabets" name="contact" required>
+                
+                                    <!-- Row 4: E-mail (Text Input) -->
+                                    <input value="" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" name="user-email" title="Enter a valid email address" type="email" placeholder="Enter E-mail" class="email-input" required>
+                
+                                    <!-- Buttons -->
+                                    <div class="form-buttons-container">
+                                        <input type="submit" value="Submit">
+                                        <input type="reset" value="Reset">
+                                    </div>
+                                </form>
+                            </div>
+                </div>
+            </section>
+            <article>
+                <h6>.</h6>
+                <div id="MAP">
+                    <img src="Assets/CONTACT_MAP.png" title="MAP" alt="MAP">
+                </div>
+            </article>
+            <footer>
+                <div>
+                    <ul id="FOOTER-TOP">
+                        <li id="LETS-CONNECT">LETS CONNECT THERE</li>
+                        <li id="HIRE-ME"><a href="form1.html" target="_blank" title="HIRE-ME">Hire Me</a></li>
+                    </ul>
+                </div>
+            
+                <div class="footer-container">
+                    <div class="social-media-container">
+                        <ul>
+                            <li class="BRAND-LOGO"><img src="Assets/LOGO_WHITE.png" class="LOGO" alt="LOGO" title="LOGO"></li>
+                        </ul>
+                        <ul>
+                            <li id="FOLLOW-ME">FOLLOW ME ON SOCIAL MEDIA:</li>
+                        </ul>
+                        <div class="social-media-icons"> 
+                            <div>
+                                <a href="https://www.facebook.com/nanyangpoly/" target="_blank"><img src="Assets/FACEBOOK_ICON.png" class="ICON" alt="FACEBOOK" title="FACEBOOK"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/nanyangpoly/" target="_blank"><img src="Assets/IG_ICON.png" class="ICON" alt="IG" title="IG"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.youtube.com/user/weareNYP" target="_blank"><img src="Assets/YOUTUBE_ICON.png" class="ICON" alt="YOUTUBE" title="YOUTUBE"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.tiktok.com/@nanyangpoly" target="_blank"><img src="Assets/TIKTOK_ICON.png" class="ICON" alt="TIKTOK" title="TIKTOK"></a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="nav-links-container">
+                        <ul>
+                            <li><a href="HOME.html" target="_blank" title="HOME_PAGE">HOME</a></li>
+                            <li><a href="ABOUT.html" target="_blank" title="ABOUT_PAGE">ABOUT</a></li>
+                            <li><a href="CASE.html" target="_blank" title="CASE_PAGE">CASE</a></li>
+                            <li><a href="CONTACT.html" target="_blank" title="CONTACT_PAGE">CONTACT</a></li>
+                        </ul>
+                    </div>
+            
+                    <div class="form-container">
+                        <span id="HAVE-AN-AWESOME-PROJECT-IDEA">
+                            HAVE AN AWESOME PROJECT IDEA?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LET'S DISCUSS
+                        </span>
+                        <!-- Your existing HTML content -->
+                        <form action="mailto:230107R@mymail.nyp.edu.sg" class="custom-form">
+                            <div class="email-input-container">
+                                <!-- Left Icon -->
+                                <img src="Assets/EMAIL_ICON.png" title="EMAIL-Icon" alt="EMAIL-Icon" class="EMAIL-icon">
+                                <!-- Input Field -->
+                                <input value="" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" name="user-email" title="Enter a valid email address" type="email" placeholder="Enter E-mail" class="email-input" required>
+                            </div>
+                            <!-- Submit Button -->
+                            <button  type="submit" class="submit-button">Send</button>
+                        </form>
+                        <div id="three-icons-container">
+                            <div>
+                                <img src="Assets/LIGHT_BULB_ICON.png" alt="BULB-ICON" title="BULB-ICON">Adhere to original design 
+                            </div>
+                            <div>
+                                <img src="Assets/QUICK_DRAWING_ICON.png" alt="QUICK-DRAWING-ICON" title="QUICK-DRAWING-ICON">Quick drawing
+                            </div>
+                            <div>
+                                <img src="Assets/UNTIL_SATISFIED_ICON.png" alt="UNTIL-SATISFIED-ICON" title="UNTIL-SATISFIED-ICON">Until satisfied
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <ul id="FOOTER-BOTTOM">
+                        <li id="POWERED-BY">C 2023  KOH ZI JIE  Powered by</li>
+                        <li id="SITEMAP" >Sitemap</li>
+                    </ul>
+                </div>
+            </footer>
+    </main>
+</body>
+</html>

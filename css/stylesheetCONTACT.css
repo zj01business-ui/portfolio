@@ -1,0 +1,183 @@
+html {
+    scroll-behavior: smooth;
+}
+header{
+    background-image: url(../Assets/CONTACT_PAGE_BANNER.png);
+    height: 861px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+header aside{
+    position: relative;
+    padding-top: 12em;
+    padding-right: 7.5em;
+}
+.h1-banner{
+    font-family: 字体圈欣意LOGO体; font-size: 80px; font-weight: bold; opacity: 32%;
+}
+.h2-banner{
+   text-align: right; font-family: 字体圈欣意LOGO体; font-size: 50px; font-weight: bold;
+    position: relative;
+    bottom: 0.8em;
+}
+.BANNER-DESCRIPTION{
+    font-weight: bold;
+    font-size: 30px;
+}
+/* BANNER-BUTTON */
+.BANNER4-BUTTON{
+    width: 220px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 10em;
+    padding: 1em 0em;
+    margin-top: 6em;
+    margin-left: 62em;
+    cursor: pointer;
+    border: none;
+}
+.BANNER4-BUTTON:hover{
+    background-color: black;
+    color: white;
+    border: white solid 1px;
+}
+.BANNER-DESCRIPTION{
+    padding-top: 1em;
+}
+header p{
+    text-align: right;
+    font-family: arial; font-size: 30px;
+    color: white;
+}
+/* breadcrumb */
+.breadcrumb{
+    position: relative;
+    top: 90%;
+    left: 80%;
+    font-size: 18px;
+    color: white;
+}
+
+
+/* FORM-section */
+#contact-texture-left-container{
+    background-image: url(../Assets/CONTACT-TEXTURE-LEFT.png);
+    width: 800px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+#contact-texture-content-left{
+    color: white;
+    padding: 8em 0em 0em 5em;
+}
+#contact-texture-content-left h2{
+    font-size: 30px;
+    font-weight: 900;
+}
+#contact-texture-content-left-p1{
+    font-size: 16px;
+    margin: 1em 0em 1em 0em;
+}
+.contact-texture-icons{
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+.contact-texture-icons img{
+    padding-right: 2em;
+}
+#contact-texture-right-container{
+    background-image: url(../Assets/CONTACT-TEXTURE-RIGHT.png);   
+    width: 850px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-left: 42%;
+    margin-top: 2em;
+    position: relative;
+}
+#contact-texture-right-container form{
+    color:  white;
+    position: absolute;
+    z-index: 1;
+    padding-left: 5em;
+    padding-top: 3em;
+
+}
+#contact-texture-right-container form select {
+    appearance: none;
+    text-indent: 1px;
+
+    padding-right: 30px; /* Adjust the padding to make space for the arrow */
+    background-image: url('../Assets/ARROW_ICON.png'); /* Replace with your arrow icon */
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 24px; /* Adjust the size of the arrow icon */
+}
+
+
+#contact-texture-right-container form select,
+#contact-texture-right-container form input {
+    box-sizing: border-box; /* Add this line */
+    display: block;
+    border-radius: 10em;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    width: 440px;
+    height: 60.5px;
+    font-size: 16px;
+    text-indent: 10px; 
+}
+
+#contact-texture-right-container form input[type="submit"],
+#contact-texture-right-container form input[type="reset"] {
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    text-indent: 0px;
+}
+
+#contact-texture-right-container form input[type="submit"]:hover,
+#contact-texture-right-container form input[type="reset"]:hover {
+    background-color: black;
+    color: white;
+}
+/* ... (your existing styles) ... */
+
+#contact-texture-right-container form .form-buttons-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed based on your layout preferences */
+}
+#contact-texture-right-container form .form-buttons-container input {
+    width: 208px;
+    height: 49.5px;
+    cursor: pointer;
+    color: black;
+}
+#contact-texture-right-container form input[type="submit"]{
+    margin-right: 1em;
+}
+/* MAP-SECTION */
+#MAP{
+    margin-top: 2em;
+} 
+#MAP img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    position: relative;
+    z-index: 1;
+    margin-top: -10em;
+}
+
+
