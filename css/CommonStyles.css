@@ -287,3 +287,33 @@ footer {
     margin: 2.5em 4em 2.5em 0em;
     padding-right: 1em;
 }
+
+
+@media (max-width: 768px) {
+
+    main {
+        width: 100%;
+        min-width: 0;
+    }
+
+    nav {
+        width: 94%;
+        height: 44px;
+        font-size: 14px;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 0.8em 0.4em;
+    }
+
+    #NAV-LOGO,
+    #NAV-LOGO:hover {
+        width: 80px;
+    }
+}
