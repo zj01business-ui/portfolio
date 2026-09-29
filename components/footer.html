@@ -86,28 +86,26 @@
                 HAVE AN AWESOME PROJECT IDEA?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LET'S DISCUSS
             </span>
             <!-- Your existing HTML content -->
-            <form action="mailto:zj01business@gmail.com" class="custom-form">
+            <form id="email-form" class="custom-form">
                 <div class="email-input-container">
-                    <!-- Left Icon -->
                     <img
                         src="Assets/EMAIL_ICON.png"
                         title="EMAIL-Icon"
                         alt="EMAIL-Icon"
                         class="EMAIL-icon"
                     >
-                    <!-- Input Field -->
                     <input
-                        value=""
-                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                        name="user-email"
-                        title="Enter a valid email address"
+                        id="user-email"
                         type="email"
+                        name="user-email"
+                        autocomplete="email"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                        title="Enter a valid email address"
                         placeholder="Enter E-mail"
                         class="email-input"
                         required
                     >
                 </div>
-                <!-- Submit Button -->
                 <button type="submit" class="submit-button">Send</button>
             </form>
             <div id="three-icons-container">

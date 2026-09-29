@@ -10,6 +10,22 @@ fetch("components/footer.html")
   .then((data) => {
     document.getElementById("footer").innerHTML = data;
   });
+
+document.getElementById("email-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const userEmail = document.getElementById("user-email").value;
+
+    const mailtoURL =
+        "mailto:zj01business@gmail.com" +
+        "?subject=" + encodeURIComponent("Project Enquiry") +
+        "&body=" + encodeURIComponent(
+            "Hello,\n\n" +
+            "My email is: " + userEmail + "\n\n"
+        );
+
+    window.location.href = mailtoURL;
+});
 function openPopup() {
   try {
     currentImageIndex = 0;
