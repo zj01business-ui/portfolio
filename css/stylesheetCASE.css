@@ -161,13 +161,13 @@ header aside{
 .three-icons-container-form{
     position: relative;
     color: white;
-    margin-left: 18em;
     bottom: 5.5em;
-    display: flex;
+    display: flex; justify-content:space-between; align-items: center;
     font-size: 14px;
+    width: 65%;margin-right:auto;margin-left:auto;
 }
 .three-icons-container-form-items{
-    padding-right: 3em;
+    padding-right: 3em; display:flex; align-items: center;
 }
 .three-icons-container-form img{
     width: 30px;
@@ -177,7 +177,7 @@ header aside{
 
 #banner-form-container{
     position: relative;
-    bottom: 5em;
+    bottom: 4em;
 }
 
 #CASE-TEXTURE {
