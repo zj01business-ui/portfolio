@@ -26,7 +26,11 @@ fetch("components/footer.html")
       window.location.href = mailtoURL;
     });
   });
-
+fetch("components/whatsapp.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("whatsapp").innerHTML = data;
+    });
 
 
 function openPopup() {
