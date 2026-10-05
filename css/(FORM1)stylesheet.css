@@ -1,75 +1,203 @@
-*{
-    margin: 0;
-    padding: 0;
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
 }
-main{
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
-form div {
-    margin-bottom: 1em;
-}
-#contactPreferenceContainer, #portfolioSuggestionsContainer {
-    display: none;
-}
-/* Style the form container */
-form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+main {
+    width: 850px;
+    margin: 60px auto;
 }
 
-/* Style form labels */
-label {
-    display: inline-block;
-    font-weight: bold;
-    color: #333333;
-}
 
-/* Style form inputs and textareas */
-input, textarea, select {
+/* =========================
+   FORM
+========================= */
+
+#feedbackForm {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 10em;
+    padding: 50px;
+
+    background-color: white;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 2em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 }
 
-/* Style submit button */
-button {
-    background-color: #333333;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10em;
+
+/* =========================
+   FORM GROUP
+========================= */
+
+#feedbackForm > div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+#feedbackForm label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+#feedbackForm input[type="text"],
+#feedbackForm input[type="tel"],
+#feedbackForm input[type="date"],
+#feedbackForm select,
+#feedbackForm textarea {
+    width: 100%;
+
+    padding: 14px 18px;
+
+    border: 1px solid #cfcfcf;
+    border-radius: 12px;
+
+    background-color: white;
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+    outline: none;
+
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+
+/* =========================
+   INPUT FOCUS
+========================= */
+
+#feedbackForm input[type="text"]:focus,
+#feedbackForm input[type="tel"]:focus,
+#feedbackForm input[type="date"]:focus,
+#feedbackForm select:focus,
+#feedbackForm textarea:focus {
+    border: 1px solid black;
+    box-shadow: 0 0 0 3px #eeeeee;
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+#feedbackForm textarea {
+    min-height: 110px;
+    resize: vertical;
+    border-radius: 12px;
+}
+
+
+/* =========================
+   RADIO OPTIONS
+========================= */
+
+.style-flex {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.style-flex label {
+    font-size: 15px !important;
+    font-weight: normal !important;
+}
+
+#feedbackForm input[type="radio"] {
+    width: 17px;
+    height: 17px;
+
+    margin: 0 15px 0 0;
+
+    accent-color: black;
+
     cursor: pointer;
 }
 
-button:hover {
+
+/* =========================
+   COLOUR
+========================= */
+
+#feedbackForm input[type="color"] {
+    width: 65px;
+    height: 42px;
+
+    padding: 3px;
+
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   SUBMIT
+========================= */
+
+#feedbackForm button[type="submit"] {
+    width: 180px;
+    height: 50px;
+
+    margin: 10px auto 0;
+
+    border: 1px solid black;
+    border-radius: 10em;
+
     background-color: black;
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
 }
 
-/* Style radio buttons and checkboxes */
-input[type="radio"], input[type="checkbox"] {
-    vertical-align: bottom;
+#feedbackForm button[type="submit"]:hover {
+    background-color: white;
+    color: black;
 }
 
-/* Apply additional styling to the suggestions textarea */
-#portfolioSuggestionsContainer textarea {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
 
-/* Style the form on small screens */
-@media (max-width: 600px) {
-    form {
-        margin: 10px;
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    main {
+        width: 90%;
+        margin: 30px auto;
     }
-}
 
-.style-flex{
-    display: flex;
+    #feedbackForm {
+        padding: 30px;
+    }
 }
